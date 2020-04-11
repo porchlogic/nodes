@@ -1,0 +1,355 @@
+{
+	"label": "mymap",
+	"children": [
+		{
+			"key": "w",
+			"label": "COMPs",
+			"children": [
+				{
+					"label": "Base",
+					"action": "createOP",
+					"args": "baseCOMP",
+					"style": "COMP",
+					"key": "w"
+				},
+				{
+					"label": "Container",
+					"action": "createOP",
+					"args": "containerCOMP",
+					"style": "COMP",
+					"key": "e"
+				},
+				{
+					"label": "Geometry",
+					"action": "createOP",
+					"args": "geometryCOMP",
+					"style": "COMP",
+					"key": "r"
+				}
+			],
+			"style": "COMP"
+		},
+		{
+			"label": "TOPs",
+			"key": "e",
+			"children": [
+				{
+					"label": "Constant",
+					"action": "createOP",
+					"args": "constantTOP",
+					"style": "TOP",
+					"key": "w"
+				},
+				{
+					"label": "Composite",
+					"action": "createOP",
+					"args": "compositeTOP",
+					"style": "TOP",
+					"key": "e"
+				},
+				{
+					"label": "Noise",
+					"action": "createOP",
+					"args": "noiseTOP",
+					"style": "TOP",
+					"key": "r",
+					"children": [
+						{
+							"key": "w",
+							"label": "custom noise 1"
+						},
+						{
+							"key": "e",
+							"label": "custom noise 2"
+						}
+					]
+				}
+			],
+			"style": "TOP"
+		},
+		{
+			"label": "CHOPs",
+			"key": "r",
+			"children": [
+				{
+					"label": "Constant",
+					"action": "createOP",
+					"args": "constantCHOP",
+					"style": "CHOP",
+					"key": "w"
+				},
+				{
+					"label": "Keyboard In",
+					"action": "createOP",
+					"args": "keyboardinCHOP",
+					"style": "CHOP",
+					"key": "i"
+				},
+				{
+					"label": "Speed",
+					"action": "createOP",
+					"args": "speedCHOP",
+					"style": "CHOP",
+					"key": "e"
+				},
+				{
+					"key": "a",
+					"label": "audio",
+					"children": [
+						{
+							"label": "Audio Band EQ",
+							"action": "createOP",
+							"args": "audiobandeqCHOP",
+							"style": "CHOP",
+							"key": "q"
+						},
+						{
+							"label": "Audio Device In",
+							"action": "createOP",
+							"args": "audiodeviceinCHOP",
+							"style": "CHOP",
+							"key": "w"
+						},
+						{
+							"label": "Audio Device Out",
+							"action": "createOP",
+							"args": "audiodeviceoutCHOP",
+							"style": "CHOP",
+							"key": "e"
+						},
+						{
+							"label": "Audio Dynamics",
+							"action": "createOP",
+							"args": "audiodynamicsCHOP",
+							"style": "CHOP",
+							"key": "r"
+						},
+						{
+							"label": "Audio File In",
+							"action": "createOP",
+							"args": "audiofileinCHOP",
+							"style": "CHOP",
+							"key": "a"
+						},
+						{
+							"label": "Audio Filter",
+							"action": "createOP",
+							"args": "audiofilterCHOP",
+							"style": "CHOP",
+							"key": "s"
+						},
+						{
+							"label": "Audio Movie",
+							"action": "createOP",
+							"args": "audiomovieCHOP",
+							"style": "CHOP",
+							"key": "d"
+						},
+						{
+							"label": "Audio NDI",
+							"action": "createOP",
+							"args": "audiondiCHOP",
+							"style": "CHOP",
+							"key": "f"
+						},
+						{
+							"label": "Audio Para EQ",
+							"action": "createOP",
+							"args": "audioparaeqCHOP",
+							"style": "CHOP",
+							"key": "c"
+						},
+						{
+							"label": "Audio Play",
+							"action": "createOP",
+							"args": "audioplayCHOP",
+							"style": "CHOP",
+							"key": "v"
+						},
+						{
+							"label": "Audio Spectrum",
+							"action": "createOP",
+							"args": "audiospectrumCHOP",
+							"style": "CHOP",
+							"key": "g"
+						},
+						{
+							"label": "Audio Stream In",
+							"action": "createOP",
+							"args": "audiostreaminCHOP",
+							"style": "CHOP",
+							"key": "z"
+						},
+						{
+							"label": "Audio Stream Out",
+							"action": "createOP",
+							"args": "audiostreamoutCHOP",
+							"style": "CHOP",
+							"key": "x"
+						},
+						{
+							"label": "Audio Oscillator",
+							"action": "createOP",
+							"args": "audiooscillatorCHOP",
+							"style": "CHOP",
+							"key": "t"
+						},
+						{
+							"label": "Audio Render",
+							"action": "createOP",
+							"args": "audiorenderCHOP",
+							"style": "CHOP",
+							"key": "b"
+						}
+					],
+					"style": "CHOP"
+				},
+				{
+					"label": "Count",
+					"action": "createOP",
+					"args": "countCHOP",
+					"style": "CHOP",
+					"key": "r"
+				},
+				{
+					"label": "Logic",
+					"action": "createOP",
+					"args": "logicCHOP",
+					"style": "CHOP",
+					"key": "s"
+				},
+				{
+					"label": "Math",
+					"action": "createOP",
+					"args": "mathCHOP",
+					"style": "CHOP",
+					"key": "d"
+				}
+			],
+			"style": "CHOP"
+		},
+		{
+			"children": [
+				{
+					"label": "Add",
+					"action": "createOP",
+					"args": "addSOP",
+					"style": "SOP",
+					"key": "w"
+				}
+			],
+			"label": "SOPs",
+			"key": "s",
+			"style": "SOP"
+		},
+		{
+			"key": "d",
+			"label": "MATs",
+			"style": "MAT",
+			"children": [
+				{
+					"label": "Constant",
+					"action": "createOP",
+					"args": "constantMAT",
+					"style": "MAT",
+					"key": "w"
+				},
+				{
+					"label": "Phong",
+					"action": "createOP",
+					"args": "phongMAT",
+					"style": "MAT",
+					"key": "e"
+				},
+				{
+					"label": "PBR",
+					"action": "createOP",
+					"args": "pbrMAT",
+					"style": "MAT",
+					"key": "r"
+				},
+				{
+					"label": "Wireframe",
+					"action": "createOP",
+					"args": "wireframeMAT",
+					"style": "MAT",
+					"key": "s"
+				},
+				{
+					"label": "Point Sprite",
+					"action": "createOP",
+					"args": "pointspriteMAT",
+					"style": "MAT",
+					"key": "d"
+				},
+				{
+					"label": "Depth",
+					"action": "createOP",
+					"args": "depthMAT",
+					"style": "MAT",
+					"key": "f"
+				},
+				{
+					"label": "GLSL",
+					"action": "createOP",
+					"args": "glslMAT",
+					"style": "MAT",
+					"key": "x"
+				}
+			]
+		},
+		{
+			"key": "f",
+			"label": "DATs",
+			"style": "DAT",
+			"children": [
+				{
+					"label": "Text",
+					"action": "createOP",
+					"args": "textDAT",
+					"style": "DAT",
+					"key": "w"
+				},
+				{
+					"label": "Table",
+					"action": "createOP",
+					"args": "tableDAT",
+					"style": "DAT",
+					"key": "e"
+				}
+			]
+		},
+		{
+			"key": "u",
+			"label": "snippets",
+			"style": "DAT",
+			"children": []
+		},
+		{
+			"key": "k",
+			"label": "slme",
+			"children": [
+				{
+					"key": "e",
+					"children": []
+				},
+				{
+					"key": "i",
+					"label": "asdf"
+				}
+			]
+		},
+		{
+			"key": "o",
+			"label": "de"
+		},
+		{
+			"key": "i",
+			"label": "sdf"
+		},
+		{
+			"key": "g",
+			"label": "project"
+		}
+	]
+}
