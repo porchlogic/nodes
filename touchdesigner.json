@@ -426,17 +426,39 @@
 			"key": "a",
 			"children": [
 				{
-					"script": "",
-					"label": "text1",
-					"key": "w"
+					"label": "print frame",
+					"key": "e",
+					"script": "x = absTime.frame\nprint(x)"
+				},
+				{
+					"label": "copy op path",
+					"key": "x",
+					"script": "curr_parent = op(ui.panes.current.owner)\n\ncurr_child = getattr(curr_parent, 'currentChild', None)\nif curr_child is not None:\n\tcurr_child = curr_parent.currentChild\n\tui.clipboard = curr_child.path\n\t"
+				},
+				{
+					"label": "paste",
+					"children": [
+						{
+							"label": "dat contents",
+							"key": "w",
+							"script": "dat = op(ui.clipboard)\n\ncurr_parent = op(ui.panes.current.owner)\n\ncurr_child = getattr(curr_parent, 'currentChild', None)\nif curr_child is not None:\n\tcurr_child = curr_parent.currentChild\t\n\tcurr_child.copy(dat)"
+						}
+					],
+					"key": "v"
 				}
 			],
 			"style": "script"
 		},
 		{
 			"label": ".tox",
-			"children": [],
-			"key": "g"
+			"children": [
+				{
+					"label": "glsl rounded corners",
+					"key": "w",
+					"tox": "glsl_rounded_corners.tox"
+				}
+			],
+			"key": "t"
 		}
 	]
 }
